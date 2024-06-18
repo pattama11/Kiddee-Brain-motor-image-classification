@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:400,500,600,700,800,900");
+
+.hero {
+  background-color: rgb(255, 255, 255);
+  /* or use an image */
+  min-height: 40vh;
+  /* Full viewport height */
+}
+
+.hero h1 {
+  color: black;
+  /* Default color for the entire h1 */
+  font-weight: bolder;
+  font-family: "Manrope", sans-serif;
+}
+
+.hero h1 .highlight {
+  color: #38ae4e;
+  padding-bottom: 5px;
+  /* Add a little padding below the border */
+}
+
+.gradient-text {
+  display: grid;
+  /* Enable CSS Grid layout */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Create 3 equal-width columns */
+  justify-items: center;
+  /* Center text horizontally in each grid cell */
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  margin-top: 10px;
+  /* Center text vertically in each grid cell */
+  /* Add spacing between grid items (optional) */
+}
+
+.gradient-text h1 {
+  font-size: 2em;
+  background: linear-gradient(90deg, #ffd700, #daa520);
+  /* Gold gradient */
+  -webkit-background-clip: text;
+  /* Clip the background to the text */
+  -webkit-text-fill-color: transparent;
+  /* Make text transparent to reveal the gradient */
+}
+
+.gradient-text h2 {
+  font-size: 1.2em;
+  color: #fff;
+  /* Adjust font size as needed */
+}
+
+.afterhero {
+  margin: 50px;
+}
+
+.afterhero-columns {
+  /* Grid container */
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Three columns */
+  grid-template-rows: auto; /* Automatically sized row for the middle box */
+  gap: 10px; /* Adjust gap as needed */
+}
+
+.border {
+  /* Styles for all boxes */
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex; /* Use flexbox to center the content vertically */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the middle box */
+.border:nth-child(2) {
+  background: linear-gradient(90deg, #007d6e, #5eb47c);
+  height: 300px;
+}
+
+/* Style and position the side boxes */
+.border:nth-child(1),
+.border:nth-child(3) {
+  height: 250px;
+  align-self: end; /* Align the boxes to the bottom of their grid area */
+}
+
+.about {
+  display: flex;
+  /* Center vertically */
+  height: 100%;
+  color: white;
+}
+
+.about-content {
+  /* Center the text within the div */
+  color: white;
+  padding-top: 50px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.left-section {
+  display: grid;
+  grid-template-rows: 1fr 2fr; /* Adjust to two rows now */
+  gap: 10px;
+}
+
+.left-section > div:first-child {
+  /* Target the first row (with two small items) */
+  display: flex; /* Use flexbox for the top row */
+  justify-content: space-around; /* Evenly distribute the items */
+}
+
+.right-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Style the individual grid items */
+.grid-item {
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.left-section > div:first-child {
+  display: flex;
+  gap: 10px; /* Adjust this value to your preference */
+}
+
+.left-section > div:first-child > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.grid-item {
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px; /* Add rounded corners */
+  min-height: 150px; /* Increase the minimum height */
+}
+
+.dark-box {
+  background-color: #333; /* Dark background color */
+  color: white; /* White text color */
+  padding: 40px; /* Add padding inside the box */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Optional: center text within the box */
+  margin-top: 20px;
+  min-height: 300px; /* Space between the grid and the box */
+}
+
+/* Optional: Styles for content inside the dark box */
+.dark-box h1 {
+  font-size: 2.5em; /* Larger font size */
+}
+
+.dark-box p {
+  font-size: 1.2em;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.font-super {
+  font-family: "Manrope", "Kanit", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  line-height: 48px !important;
+  transition: all 0.5s ease;
+}
+
+.font-header {
+  font-family: "Manrope", "Kanit", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  transition: all 0.5s ease;
+}
+
+.font-subheader {
+  font-family: "Manrope", "Kanit", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  transition: all 0.5s ease;
+}
+
+.font-body {
+  font-family: "Manrope", "Kanit", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  transition: all 0.5s ease;
+}
+
+.font-bodybold {
+  font-family: "Manrope", "Kanit", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  transition: all 0.5s ease;
+}
+
+.font-subbody {
+  font-family: "Manrope", "Kanit", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 21px !important;
+  transition: all 0.5s ease;
+}
+
+.font-subbodybold {
+  font-family: "Manrope", "Kanit", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 21px !important;
+  transition: all 0.5s ease;
+}
+
+.card-question {
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tag {
+  background-color: #fff2e8;
+  color: #fa541c;
+  padding: 2px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+
+  font-family: "Manrope", "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 21px !important;
+  transition: all 0.5s ease;
+}
